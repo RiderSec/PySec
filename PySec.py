@@ -19,11 +19,32 @@ print("Welcome to PySec!\n")
 
 while choice1 != 0:
     print("Choose which characters PySec will use: ")
-    print("1 - All")
-    print("2 - Uppercase")
-    print("3 - Lowercase")
-    print("4 - Numbers")
-    print("5 - Symbols")
+
+    if upper == True & lower == True & nums == True & syms == True:
+        print("1 - All = True")
+    else:
+        print("1 - All = False")
+
+    if upper == True:
+        print("2 - Uppercase = True")
+    else:
+        print("2 - Uppercase = False")
+
+    if lower == True:
+        print("3 - Lowercase = True")
+    else:
+        print("3 - Lowercase = False")
+    
+    if nums == True:
+        print("4 - Numbers = True")
+    else:
+        print("4 - Numbers = False")
+
+    if syms == True:
+        print("5 - Symbols = True")
+    else:
+        print("5 - Symbols = False") 
+    
     print("0 - Continue\n")
 
     choice1 = input("Input: ")
